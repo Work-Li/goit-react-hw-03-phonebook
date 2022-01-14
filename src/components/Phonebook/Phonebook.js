@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Phonebook.module.css';
+import PropTypes from 'prop-types';
 
 const Phonebook = ({ contacts, onDeleteContact }) => {
   return (
@@ -15,6 +16,11 @@ const Phonebook = ({ contacts, onDeleteContact }) => {
       ))}
     </ul>
   );
+};
+
+Phonebook.propTypes = {
+  contacts: PropTypes.arrayOf(PropTypes.object),
+  onDeleteContact: PropTypes.func,
 };
 
 export default Phonebook;

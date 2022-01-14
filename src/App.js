@@ -4,7 +4,6 @@ import Phonebook from './components/Phonebook/Phonebook';
 import Form from './components/Form/Form';
 import Filter from './components/Filter/Filter';
 import { nanoid } from 'nanoid';
-// import PropTypes from 'prop-types';
 import toast, { Toaster } from 'react-hot-toast';
 
 class App extends React.Component {
